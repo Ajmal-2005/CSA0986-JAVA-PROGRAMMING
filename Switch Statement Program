@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class swtich {
+    public static void main(String[] args){
+        int a,b,ch;
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter Two Numbers: ");
+        a = s.nextInt();
+        b = s.nextInt();
+        do{
+            int c;
+            System.out.println("1.ADD\n2.SUB\n3.MUL\n4.DIV\n5.EXIT\n");
+            System.out.println("Enter your choice: ");
+            ch = s.nextInt();
+            
+            switch(ch){
+                case 1:
+                c = a+b;
+                System.out.println(c);
+                break;
+                case 2:
+                c = a-b;
+                System.out.println(c);
+                break;
+                case 3:
+                c = a*b;
+                System.out.println(c);
+                break;
+                case 4:
+                c = a/b;
+                System.out.println(c);
+                break;
+                case 5:
+                System.exit(0);
+                break;
+                default:
+                System.out.println("Your choice is wrong pls try again sir");
+            }
+        }while(ch!=5);
+    }
+    
+}
